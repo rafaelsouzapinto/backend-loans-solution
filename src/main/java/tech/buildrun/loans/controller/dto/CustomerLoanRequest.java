@@ -7,7 +7,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import tech.buildrun.loans.domain.Customer;
 
-public record CustomerLoanRequest(@Min(value = 18) @NotNull Integer age,
+public record CustomerLoanRequest(@Min(value = 18) 
+									@NotNull Integer age,
 									@CPF String cpf,
 									@NotBlank String name,
 									@Min(value = 1000) @NotNull Double income,
